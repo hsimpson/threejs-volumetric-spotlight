@@ -1,0 +1,45 @@
+{
+  "name": "threejs-volumetric-spotlight",
+  "version": "1.0.0",
+  "description": "Volumetric spotlight with three.js",
+  "main": "index.js",
+  "repository": "https://github.com/hsimpson/threejs-volumetric-spotlight.git",
+  "author": "Daniel Toplak <homer.simpson123@gmx.de>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./build/webpack.prod.ts",
+    "dev": "webpack serve --config ./build/webpack.dev.ts",
+    "lint": "eslint ./src/ --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "three": "^0.127.0"
+  },
+  "devDependencies": {
+    "@types/mini-css-extract-plugin": "^1.4.1",
+    "@types/node": "^14.14.37",
+    "@types/three": "^0.127.0",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^3.11.3",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "@typescript-eslint/typescript-estree": "^4.21.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.1",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.1",
+    "prettier": "^2.2.1",
+    "resize-observer-polyfill": "^1.5.1",
+    "rimraf": "^3.0.2",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.1.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
