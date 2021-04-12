@@ -20,6 +20,10 @@ const commonConfig: Configuration = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
+      {
+        test: /\.(vs|fs)$/i,
+        use: 'raw-loader',
+      },
     ],
   },
 

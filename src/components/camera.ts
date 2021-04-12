@@ -6,7 +6,7 @@ export function createCamera(): PerspectiveCamera {
 
   // move the camera 2 units up and 7 units back
   camera.position.y = 2;
-  camera.position.z = 7;
+  camera.position.z = 13;
 
   return camera;
 }

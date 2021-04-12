@@ -6,6 +6,7 @@ import { createLights } from './components/lights';
 import { createScene } from './components/scene';
 import { createVolumetricSpotLight } from './components/volumetricspotlight';
 import { createCameraControls } from './systems/cameracontrols';
+import { createGUI } from './systems/gui';
 import { Loop } from './systems/loop';
 import { createRenderer } from './systems/renderer';
 
@@ -16,6 +17,8 @@ export class RenderEngine {
   private _loop: Loop;
 
   public constructor() {
+    createGUI();
+
     this._scene = createScene();
     this._camera = createCamera();
     this._renderer = createRenderer();
