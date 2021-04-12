@@ -4,7 +4,7 @@ uniform vec3 color;
 uniform float distance;
 uniform float distanceStart;
 uniform float distanceEnd;
-uniform float lerpLinearQuad;
+uniform float blend;
 
 varying vec3 posObjectSpace;
 
@@ -49,8 +49,8 @@ void main() {
 
   // float pixDistFromSource = posObjectSpace.y;
 
-  intensity *= computeAttenuation(pixDistFromSource, distanceStart, distanceEnd,
-                                  lerpLinearQuad);
+  intensity *=
+      computeAttenuation(pixDistFromSource, distanceStart, distanceEnd, blend);
 
   gl_FragColor = vec4(color, intensity);
   // gl_FragColor = vec4(color, 0.5);
